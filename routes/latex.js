@@ -14,7 +14,7 @@ module.exports = function (app) {
      * Retrieve all latex documents for the project
      */
     app.get('/documents', function (req, res) {
-        db.query('SELECT * FROM documents',[] , function (err, data) {
+        db.query('SELECT * FROM documents', function (err, data) {
             if (err) {
                 return console.error('error running query', err)
             }
