@@ -1,0 +1,19 @@
+{
+  "name": "slack-integrations",
+  "version": "0.0.0",
+  "description": "Slack integrations for design project 2018",
+  "main": "server.js",
+  "author": "John Wu",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.13.4",
+    "method-override": "^2.3.9",
+    "morgan": "^1.8.2",
+    "standard": "^10.0.2",
+    "uuid": "^3.1.0"
+  },
+  "scripts": {
+    "test": "standard"
+  }
+}
