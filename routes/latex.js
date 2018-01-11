@@ -1,3 +1,4 @@
+var db = require('../lib/db')
 /**
  * Routes for latex management
  *
@@ -8,9 +9,14 @@ module.exports = function (app) {
     /**
      * Retrieve all latex documents for the project
      */
-    app.get('/test', function (req, res) {
-        res.send({
-            'documents': 'docs'
+    app.get('/documents', function (req, res) {
+        db.query('SELECT * FROM documents',[] , function (err, data) {
+            if (err) {
+                return console.error('error running query', err)
+            }
+            res.send({
+                'documents': data.rows
+            })
         })
     })
 
