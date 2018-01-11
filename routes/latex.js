@@ -6,6 +6,10 @@ var db = require('../lib/db')
  */
 module.exports = function (app) {
 
+    app.get('/', function (req, res) {
+        res.send('Hello')
+    })
+
     /**
      * Retrieve all latex documents for the project
      */
