@@ -34,6 +34,13 @@ module.exports = function (app) {
               console.log(body)
           }
       })
-      res.send('Complete')
+      res.send({
+          'attachments': [
+              {
+                  'title': 'Project Proposal',
+                  'text': 'https://www.overleaf.com/13160242vmdqjmxwmcgs#/50592578/'
+              }
+          ]
+      })
   })
 }
