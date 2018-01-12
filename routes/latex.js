@@ -35,6 +35,7 @@ module.exports = function (app) {
           }
       })
       res.send({
+          'text': 'All latex documents',
           'attachments': [
               {
                   'title': 'Project Proposal',
