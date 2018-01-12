@@ -4,6 +4,7 @@
  * @param app
  */
 module.exports = function (app) {
+
   app.get('/', function (req, res) {
     res.send('Hello')
   })
@@ -11,7 +12,7 @@ module.exports = function (app) {
     /**
      * Retrieve all latex documents for the project
      */
-  app.get('/documents', function (req, res) {
+  app.post('/documents', function (req, res) {
     res.send({
       'documents': [
         {
