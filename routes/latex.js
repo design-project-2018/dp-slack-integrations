@@ -4,8 +4,9 @@
  * @param app
  */
 module.exports = function (app) {
+
   app.get('/', function (req, res) {
-    res.send('Hello')
+    res.send('Test')
   })
 
     /**
