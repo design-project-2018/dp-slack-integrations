@@ -26,5 +26,4 @@ require('./routes/latex')(app)
 // start server
 app.listen(port)
 console.log('App listing on port ' + port)
-
 module.exports = app
