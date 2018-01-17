@@ -14,8 +14,12 @@ module.exports = function (app) {
      */
   app.post('/documents', function (req, res) {
       res.send({
-          'text': 'All latex documents',
+          'text': 'All documents',
           'attachments': [
+	      {
+		  'title': 'Google Drive',
+		  'text': 'https://drive.google.com/drive/folders/10YtrS7klwOXfVfE8NbxthsQNgbCBZefL'
+	      },
               {
                   'title': 'Project Proposal',
                   'text': 'https://www.overleaf.com/13160242vmdqjmxwmcgs#/50592578/'
