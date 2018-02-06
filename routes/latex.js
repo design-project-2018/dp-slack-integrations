@@ -23,6 +23,10 @@ module.exports = function (app) {
               {
                   'title': 'Project Proposal',
                   'text': 'https://www.overleaf.com/13160242vmdqjmxwmcgs#/50592578/'
+              },
+	      {
+	      	  'title': 'Progress Report 1',
+		  'text': 'https://www.overleaf.com/13631684wkzzjqthsbnb'
               }
           ]
       })

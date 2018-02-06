@@ -1,5 +1,5 @@
 {
-  "name": "slack-integrations",
+  "name": "dp-slack-integrations",
   "version": "0.0.0",
   "description": "Slack integrations for design project 2018",
   "main": "server.js",
